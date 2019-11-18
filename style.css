@@ -1,3 +1,5 @@
+/* nav bar */
+
 .nav-bar {
   background-color: black;
   height: 5em;
@@ -13,9 +15,13 @@
   padding-top: 2em;
 }
 
+/* header -- probs photo story */
+
 .featured-story {
   width: 100%;
 }
+
+/* section headers -- please feel free to change */
 
 .section-head {
   //padding-top: 1em;
@@ -24,25 +30,72 @@
   text-align: center;
 }
 
-.section {
+/* Each section has a certain type of styling, so that the grid can accomodate how many stories each has.
+Please feel free to change the grid / do different styling. */
+
+.pregame {
   margin: 1em;
   padding-top: 1em;
   padding-bottom: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 2em;
   grid-row-gap: 2em;
   text-align: center;
   overflow: auto;
+  align-self: center;
 }
+
+.dancefloor {
+  margin: 1em;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  text-align: center;
+  overflow: auto;
+  align-self: center;
+}
+
+.features {
+  margin: 1em;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  text-align: center;
+  overflow: auto;
+  align-self: center;
+}
+
+.hangover {
+  margin: 1em;
+  padding-top: 1em;
+  padding-bottom: 3em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 2em;
+  grid-row-gap: 2em;
+  text-align: center;
+  overflow: auto;
+  align-self: center;
+}
+
+/* basic story styling - play with it! */
 
 .story {
   background-color: pink;
-  font-size: 2em;
   text-align: center;
   padding: 2em;
-  height: 5em;
+  width: 10em;
   box-shadow: 0.25em 0.25em 8px #888888
 }
 
@@ -50,17 +103,84 @@ h1 {
   font-size: 3em;
 }
 
-#pr-story-1 {
+/* I gave each story a unique id so that we could put in original photos/styling for each story */
+
+#pr-pets {
   background-image: url(photos/story1.png);
 }
-
-#pr-story-2 {
+#pr-lone-major {
   background-image: url(photos/story2.png);
 }
-
-#pr-story-3 {
+#pr-archives {
   background-image: url(photos/story3.jpg);
 }
+#pr-drunchies {
+  background-image: url(photos/story3.jpg);
+}
+#pr-life-advice {
+  background-image: url(photos/story3.jpg);
+}
+#pr-big-10 {
+  background-image: url(photos/story3.jpg);
+}
+#pr-women {
+  background-image: url(photos/story3.jpg);
+}
+
+#df-hk{
+  background-image: url(photos/story3.jpg);
+}
+#df-twins {
+  background-image: url(photos/story3.jpg);
+}
+#df-sheridan {
+  background-image: url(photos/story3.jpg);
+}
+#df-rtvf {
+  background-image: url(photos/story3.jpg);
+}
+#df-clubs {
+  background-image: url(photos/story3.jpg);
+}
+#df-re {
+  background-image: url(photos/story3.jpg);
+}
+#df-old {
+  background-image: url(photos/story3.jpg);
+}
+#df-prof-pol {
+  background-image: url(photos/story3.jpg);
+}
+
+#ft-saferide {
+  background-image: url(photos/story3.jpg);
+}
+#ft-food {
+  background-image: url(photos/story3.jpg);
+}
+#ft-visas {
+  background-image: url(photos/story3.jpg);
+}
+#ft-resources {
+  background-image: url(photos/story3.jpg);
+}
+
+#hg-edibles {
+  background-image: url(photos/story3.jpg);
+}
+#hg-dates {
+  background-image: url(photos/story3.jpg);
+}
+#hg-plants {
+  background-image: url(photos/story3.jpg);
+}
+#hg-cry {
+  background-image: url(photos/story3.jpg);
+}
+#hg-square-up {
+  background-image: url(photos/story3.jpg);
+}
+
 
 footer {
 	background-color: black;
