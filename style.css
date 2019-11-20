@@ -1,9 +1,18 @@
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
 /* nav bar */
 
 .nav-bar {
   background-color: black;
   height: 5em;
   overflow: auto;
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
 }
 
 .nav_button {
@@ -13,8 +22,13 @@
   float: right;
   padding: 2%;
   padding-top: 2em;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
-
+.nav_button:hover{
+  color: black;
+  background-color:white;
+}
 /* header -- probs photo story */
 
 .featured-story {
@@ -22,10 +36,9 @@
 }
 
 /* section headers -- please feel free to change */
-
 .section-head {
   //padding-top: 1em;
-  padding-left: 2%;
+  /* padding-left: 2%; */
   //padding-bottom: 1em;
   text-align: center;
 }
@@ -34,31 +47,31 @@
 Please feel free to change the grid / do different styling. */
 
 .pregame {
-  margin: 1em;
   padding-top: 1em;
   padding-bottom: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 2em;
+  grid-template-columns: 14em 5em 14em 5em 14em;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-column-gap: 2em; */
   grid-row-gap: 2em;
   text-align: center;
   overflow: auto;
   align-self: center;
+  justify-content: center;
 }
 
 .dancefloor {
-  margin: 1em;
   padding-top: 1em;
   padding-bottom: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 2em;
+  grid-template-columns: 14em 5em 7em 7em 5em 14em;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-column-gap: 2em; */
   grid-row-gap: 2em;
   text-align: center;
   overflow: auto;
   align-self: center;
+  justify-content: center;
 }
 
 .features {
@@ -66,37 +79,93 @@ Please feel free to change the grid / do different styling. */
   padding-top: 1em;
   padding-bottom: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 5em 61em 5em;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-column-gap: 2em;
   grid-row-gap: 2em;
   text-align: center;
   overflow: auto;
   align-self: center;
+  justify-content: center;
 }
 
+
 .hangover {
-  margin: 1em;
   padding-top: 1em;
   padding-bottom: 3em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 2em;
+  grid-template-columns: 5em 28em 5em 28em 5em;
+  grid-template-rows: 1fr 1fr 1fr;
+  /* grid-column-gap: 2em; */
   grid-row-gap: 2em;
   text-align: center;
   overflow: auto;
   align-self: center;
+  justify-content: center;
 }
 
 /* basic story styling - play with it! */
-
+.article-link{
+  text-decoration: none;
+}
 .story {
   background-color: pink;
   text-align: center;
   padding: 2em;
   width: 10em;
-  box-shadow: 0.25em 0.25em 8px #888888
+  box-shadow: 0.25em 0.25em 8px #888888;
+  transition: transform .5s;
+  transform: scale(1.0);
+}
+.feature{
+  background-color: pink;
+  color: white;
+  text-align: center;
+  padding: 2em;
+  width: 10em;
+  box-shadow: 0.25em 0.25em 8px #888888;
+  transition: transform .5s;
+  transform: scale(1.0);
+}
+.feature:hover{
+  transform: scale(1.1);
+}
+.feature h4{
+  margin-top: -2vh;
+  font-size: 150%;
+}
+.feature h6{
+  margin-top: -2vh;
+}
+.feature p{
+  margin-top: -2vh;
+}
+.section-featured{
+ 
+  background-color: pink;
+  text-align: center;
+  padding: 2em;
+  height: 15em;
+  margin-left: 1em;
+  margin-right: 2em;
+  box-shadow: 0.25em 0.25em 8px #888888;
+  transition: transform .5s;
+  transform: scale(1.0);
+  transition: transform .5s;
+  transform: scale(1.0);
+  color: white;
+}
+.section-featured p{
+  margin-top: -2vh;
+}
+
+.section-featured:hover{
+  transform: scale(1.1);
+
+}
+.story:hover{
+  transform: scale(1.1);
+
 }
 
 h1 {
@@ -106,84 +175,219 @@ h1 {
 /* I gave each story a unique id so that we could put in original photos/styling for each story */
 
 #pr-pets {
-  background-image: url(photos/story1.png);
+  background-image: url(photos/koi.png);
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  /* width: 50em; */
+  align-self: center;
 }
 #pr-lone-major {
-  background-image: url(photos/story2.png);
+  background-image: url(photos/story3.png);
+  grid-row: 2;
+  grid-column: 1;
 }
 #pr-archives {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 2;
+  grid-column: 3;
 }
 #pr-drunchies {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 2;
+  grid-column: 5
 }
 #pr-life-advice {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 3;
+  grid-column: 1;
 }
 #pr-big-10 {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 3;
+  grid-column: 3;
 }
 #pr-women {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 3;
+  grid-column: 5;
 }
 
 #df-hk{
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  width: 20em;
+  align-self: center;
+  padding-left: 2em;
+}
+#df-hk h6{
+  font-size: 125%;
 }
 #df-twins {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 1;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  width: 20em;
+  align-self: center;
+}
+#df-twins h6{
+  font-size: 125%;
 }
 #df-sheridan {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 2;
+  grid-column: 1;
 }
 #df-rtvf {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/rtvf_dark.png);
+  background-size: cover;
+  grid-row: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+}
+#df-rtvf:hover{
+  background-image: url(photos/rtvf.png);
+}
+#df-rtvf h4{
+  height: 15%;
 }
 #df-clubs {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 2;
+  grid-column: 6;
 }
 #df-re {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 3;
+  grid-column: 1;
 }
 #df-old {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
 }
 #df-prof-pol {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 3;
+  grid-column: 6;
+}
+#df-prof-pol h6{
+  height: 30%;
 }
 
 #ft-saferide {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  width: 56em;
+  grid-column: 2;
+  grid-row: 1;
+  height: 5em;
 }
 #ft-food {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  width: 56em;
+  grid-column: 2;
+  grid-row: 2;
+  height: 5em;
 }
 #ft-visas {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  width: 56em;
+  height: 5em;
+  grid-column: 2;
+  grid-row: 3;
 }
 #ft-resources {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  width: 56em;
+  height: 5em;
+  grid-column: 2;
+  grid-row: 4;
 }
 
 #hg-edibles {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 1;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  width: 56em;
+  align-self: center;
 }
 #hg-dates {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 2;
+  grid-column: 2;
+  width: 24em;
+
 }
 #hg-plants {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 2;
+  grid-column: 4;
+  width: 24em;
+
 }
 #hg-cry {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 3;
+  grid-column: 2;
+  width: 24em;
+
 }
 #hg-square-up {
-  background-image: url(photos/story3.jpg);
+  background-image: url(photos/story3.png);
+  grid-row: 3;
+  grid-column: 4;
+  width: 24em;
+
+}
+a{
+  color: white;
+  transition: color 0.2s ease;
+}
+a:hover{
+  color:purple;
 }
 
-
+.story h4{
+  color: white;
+  font-size: 150%;
+  height: 25%;
+  /* background-color: white; */
+}
+.story h6{
+  color: white;
+  font-size: 100%;
+  height: 25%;
+  margin-top: 2vh;
+  /* background-color: white; */
+}
+.section-featured h4{
+  font-size: 280%;
+  height: 20%;
+  
+}
+.section-featured h6{
+  font-size: 150%;
+  height: 10%;
+}
 footer {
 	background-color: black;
 	height: 3em;
 	width: 100%;
+}
+.container-link{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+
+  /* z-index: 2; */
+}
+.author-name{
+  /* z-index: 1; */
 }
