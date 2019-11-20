@@ -188,9 +188,13 @@ h1 {
   grid-column: 1;
 }
 #pr-archives {
-  background-image: url(photos/story3.png);
+  background-image: url(photos/archives_dark.png);
+  background-size: cover;
   grid-row: 2;
   grid-column: 3;
+}
+#pr-archives:hover{
+  background-image: url(photos/archives.png);
 }
 #pr-drunchies {
   background-image: url(photos/story3.png);
@@ -226,7 +230,8 @@ h1 {
   font-size: 125%;
 }
 #df-twins {
-  background-image: url(photos/story3.png);
+  background-image: url(photos/twins_dark.png);
+  background-size: cover;
   grid-row: 1;
   grid-column-start: 4;
   grid-column-end: 7;
@@ -235,6 +240,10 @@ h1 {
 }
 #df-twins h6{
   font-size: 125%;
+
+}
+#df-twins:hover{
+  background-image: url(photos/twins.png);
 }
 #df-sheridan {
   background-image: url(photos/story3.png);
