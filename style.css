@@ -50,10 +50,10 @@ Please feel free to change the grid / do different styling. */
   padding-top: 1em;
   padding-bottom: 3em;
   display: grid;
-  grid-template-columns: 14em 5em 14em 5em 14em;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 14em 2.5em 14em 2.5em 14em;
+  grid-template-rows: 20em 1fr 1fr;
   /* grid-column-gap: 2em; */
-  grid-row-gap: 2em;
+  grid-row-gap: 1em;
   text-align: center;
   overflow: auto;
   align-self: center;
@@ -65,7 +65,7 @@ Please feel free to change the grid / do different styling. */
   padding-bottom: 3em;
   display: grid;
   grid-template-columns: 14em 5em 7em 7em 5em 14em;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 20em 1fr 1fr;
   /* grid-column-gap: 2em; */
   grid-row-gap: 2em;
   text-align: center;
@@ -111,8 +111,8 @@ Please feel free to change the grid / do different styling. */
 .story {
   background-color: pink;
   text-align: center;
-  padding: 2em;
-  width: 10em;
+  padding: 4em;
+  width: 6em;
   box-shadow: 0.25em 0.25em 8px #888888;
   transition: transform .5s;
   transform: scale(1.0);
@@ -131,14 +131,14 @@ Please feel free to change the grid / do different styling. */
   transform: scale(1.1);
 }
 .feature h4{
-  margin-top: -2vh;
+  margin-top: -1vh;
   font-size: 150%;
 }
 .feature h6{
-  margin-top: -2vh;
+  /* margin-top: -2vh; */
 }
 .feature p{
-  margin-top: -2vh;
+  /* margin-top: -2vh; */
 }
 .section-featured{
  
@@ -146,7 +146,7 @@ Please feel free to change the grid / do different styling. */
   text-align: center;
   padding: 2em;
   height: 15em;
-  margin-left: 1em;
+  margin-left: 2em;
   margin-right: 2em;
   box-shadow: 0.25em 0.25em 8px #888888;
   transition: transform .5s;
@@ -163,6 +163,29 @@ Please feel free to change the grid / do different styling. */
   transform: scale(1.1);
 
 }
+.dancefloor-featured{
+ 
+  background-color: pink;
+  text-align: center;
+  padding: 2em;
+  height: 15em;
+  margin-left: 2em;
+  margin-right: 2em;
+  box-shadow: 0.25em 0.25em 8px #888888;
+  transition: transform .5s;
+  transform: scale(1.0);
+  transition: transform .5s;
+  transform: scale(1.0);
+  color: white;
+}
+.dancefloor-featured p{
+  margin-top: -2vh;
+}
+
+.dancefloor-featured:hover{
+  transform: scale(1.1);
+
+}
 .story:hover{
   transform: scale(1.1);
 
@@ -175,12 +198,16 @@ h1 {
 /* I gave each story a unique id so that we could put in original photos/styling for each story */
 
 #pr-pets {
-  background-image: url(photos/koi.png);
+  background-image: url(photos/pets_dark.png);
+  background-size: cover;
   grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 6;
   /* width: 50em; */
   align-self: center;
+}
+#pr-pets:hover{
+  background-image: url(photos/pets.png);
 }
 #pr-lone-major {
   background-image: url(photos/story3.png);
@@ -223,11 +250,16 @@ h1 {
   grid-column-start: 1;
   grid-column-end: 4;
   width: 20em;
-  align-self: center;
-  padding-left: 2em;
+  /* align-self: center; */
+  justify-self: start;
+  margin-right: 2em;
+  
 }
 #df-hk h6{
   font-size: 125%;
+}
+#df-hk h4{
+  font-size: 200%;
 }
 #df-twins {
   background-image: url(photos/twins_dark.png);
@@ -237,10 +269,14 @@ h1 {
   grid-column-end: 7;
   width: 20em;
   align-self: center;
+
 }
 #df-twins h6{
   font-size: 125%;
 
+}
+#df-twins h4{
+  font-size: 200%;
 }
 #df-twins:hover{
   background-image: url(photos/twins.png);
@@ -289,11 +325,15 @@ h1 {
 }
 
 #ft-saferide {
-  background-image: url(photos/story3.png);
+  background-image: url(photos/testgif_still0.gif);
+  background-size: cover;
   width: 56em;
   grid-column: 2;
   grid-row: 1;
   height: 5em;
+}
+#ft-saferide:hover{
+  background-image: url(photos/testgif.gif);
 }
 #ft-food {
   background-image: url(photos/story3.png);
@@ -340,11 +380,15 @@ h1 {
 
 }
 #hg-cry {
-  background-image: url(photos/story3.png);
+  background-image: url(photos/cry_dark.png);
+  background-size: cover;
   grid-row: 3;
   grid-column: 2;
   width: 24em;
 
+}
+#hg-cry:hover{
+  background-image: url(photos/cry.png);
 }
 #hg-square-up {
   background-image: url(photos/story3.png);
