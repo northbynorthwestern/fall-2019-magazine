@@ -39,8 +39,15 @@ body{
 .section-head {
   //padding-top: 1em;
   /* padding-left: 2%; */
+  /* //padding-bottom: 1em; */
+  text-align: center;
+}
+.section-subhead {
+  //padding-top: 1em;
+  /* padding-left: 2%; */
   //padding-bottom: 1em;
   text-align: center;
+  font-family: 'Noto Serif', serif;
 }
 
 /* Each section has a certain type of styling, so that the grid can accomodate how many stories each has.
