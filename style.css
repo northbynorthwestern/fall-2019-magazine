@@ -6,10 +6,15 @@ body{
 }
 /* nav bar */
 @media screen and (max-width: 959px){
+  .logo{
+    float:left; 
+    height: 2em; 
+    padding: .5em;
+    }
   .nav-bar {
     background-color: black;
-    height: 5em;
-    overflow: auto;
+    height: 3em;
+    width: 100%;
     z-index: 1;
     position: relative;
     overflow: hidden;
@@ -17,10 +22,10 @@ body{
   
   .nav_button {
     color: white;
-    font-size: 16px;
+    font-size: 80%;
     font-family: sans-serif;
     float: right;
-    padding: 2%;
+    padding: 1%;
     padding-top: 2em;
     text-decoration: none;
     transition: background-color 0.3s ease;
@@ -82,20 +87,18 @@ body{
   }
   
   .features {
-    margin: 1em;
     padding-top: 1em;
     padding-bottom: 3em;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 2em;
+    /* grid-column-gap: 2em; */
     grid-row-gap: 2em;
     text-align: center;
-    overflow: hidden;
+    overflow: auto;
     align-self: center;
     justify-content: center;
   }
-  
   
   .hangover {
     padding-top: 1em;
@@ -119,7 +122,8 @@ body{
     background-color: pink;
     text-align: center;
     /* padding: 4em; */
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     box-shadow: 0.25em 0.25em 8px #888888;
     transition: transform .5s;
     transform: scale(1.0);
@@ -129,7 +133,7 @@ body{
     color: white;
     text-align: center;
     padding: 2em;
-    width: 100%;
+    width: 80%;
     box-shadow: 0.25em 0.25em 8px #888888;
     transition: transform .5s;
     transform: scale(1.0);
@@ -152,7 +156,8 @@ body{
     background-color: pink;
     text-align: center;
     height: 15em;
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     padding-bottom: 2em;
     /* margin-left: 2em; */
     /* margin-right: 2em; */
@@ -169,8 +174,9 @@ body{
   .hg-story{
     background-color: pink;
     text-align: center;
-    padding: 4em;
-    width: 100%
+    /* padding: 4em; */
+    width: 80%;
+    margin-left: 10%;
     box-shadow: 0.25em 0.25em 8px #888888;
     transition: transform .5s;
     transform: scale(1.0);
@@ -185,7 +191,8 @@ body{
     background-color: pink;
     text-align: center;
     /* padding: 4em; */
-    width: 100%;
+    width: 80%;
+    margin-left: 10%;
     box-shadow: 0.25em 0.25em 8px #888888;
     transition: transform .5s;
     transform: scale(1.0);
@@ -193,19 +200,19 @@ body{
   .dancefloor-featured p{
     margin-top: -2vh;
   }
-  
+/*   
   .dancefloor-featured:hover{
     transform: scale(1.1);
   
-  }
-  .story:hover{
+  } */
+  /* .story:hover{
     transform: scale(1.1);
   
   }
   .hg-story:hover{
     transform: scale(1.1);
   
-  }
+  } */
   
   h1 {
     font-size: 3em;
@@ -214,52 +221,46 @@ body{
   /* I gave each story a unique id so that we could put in original photos/styling for each story */
   
   #pr-pets {
-    background-image: url(photos/pets_dark.png);
+    background-image: url(photos/pets.png);
     background-size: cover;
     grid-row: 1;
     /* width: 50em; */
     align-self: center;
   }
-  #pr-pets h4{
-    font-family: 'Indie Flower', cursive;
-  }
-  #pr-pets:hover{
-    background-image: url(photos/pets.png);
-  }
   #pr-lone-major {
-    background-image: url(photos/major_dark.png);
+    background-image: url(photos/major_mobile.png);
     grid-row: 2;
-  }
-  #pr-lone-major:hover{
-    background-image: url(photos/major.png);
+    background-size: cover;
   }
   #pr-archives {
-    background-image: url(photos/archives_dark.png);
+    background-image: url(photos/archives.png);
     background-size: cover;
     grid-row: 3;
   }
-  #pr-archives:hover{
-    background-image: url(photos/archives.png);
-  }
   #pr-drunchies {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/drunchie_mobile.png);
+    background-size: cover;
     grid-row: 4;
   }
   #pr-life-advice {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/josh_mobile.png);
+    background-size: cover;
     grid-row: 5;
   }
   #pr-big-10 {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/owo_mobile.png);
+    background-size: cover;
     grid-row: 6;
   }
   #pr-women {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/women_mobile.png);
+    background-size: cover;
     grid-row: 7;
   }
   
   #df-hk{
-    background-image: url(photos/story3.png);
+    background-image: url(photos/hk.png);
+    background-size: cover;
     grid-row: 1;
     /* align-self: center; */
   }
@@ -272,7 +273,7 @@ body{
     color: white;
   }
   #df-twins {
-    background-image: url(photos/twins_dark.png);
+    background-image: url(photos/twins.png);
     background-size: cover;
     grid-row: 2;
   
@@ -286,16 +287,14 @@ body{
     font-size: 200%;
     color: white;
   }
-  #df-twins:hover{
-    background-image: url(photos/twins.png);
-  }
   #df-sheridan {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/sheridan.png);
+    background-size: cover;
     grid-row: 3;
     grid-column: 1;
   }
   #df-rtvf {
-    background-image: url(photos/rtvf_dark.png);
+    background-image: url(photos/rtvf.png);
     background-size: cover;
     grid-row: 4;
   }
@@ -306,19 +305,23 @@ body{
     height: 15%;
   }
   #df-clubs {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/clubs_mobile.png);
+    background-size: cover;
     grid-row: 5;
   }
   #df-re {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/re_mobile.png);
+    background-size: cover;
     grid-row: 6;
   }
   #df-old {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/old.png);
+    background-size: cover;
     grid-row: 7;
   }
   #df-prof-pol {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/profpol_mobile.png);
+    background-size: cover;
     grid-row: 8;
   }
   #df-prof-pol h6{
@@ -326,36 +329,42 @@ body{
   }
   
   #ft-saferide {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/saferide_mobile.png);
     background-size: cover;
-    width: 100%;
+    width: 75%;
+    margin-left: 1.5%;
     grid-row: 1;
     /* height: 5em; */
   }
-  #ft-saferide:hover{
-    background-image: url(photos/feature-test-ani.gif);
-  }
+
   #ft-food {
-    background-image: url(photos/story3.png);
-    width: 100%;
+    background-image: url(photos/mealplan_mobile.png);
+    width: 75%;
+    background-size: cover;
     grid-row: 2;
+    margin-left: 1.5%;
     /* height: 5em; */
   }
   #ft-visas {
-    background-image: url(photos/story3.png);
-    width: 100%;
+    background-image: url(photos/visas_mobile.png);
+    width: 75%;
+    background-size: cover;
     /* height: 5em; */
     grid-row: 3;
+    margin-left: 1.5%;
   }
   #ft-resources {
-    background-image: url(photos/story3.png);
-    width: 100%;
+    background-image: url(photos/redirected_mobile.png);
+    width: 75%;
+    background-size: cover;
     /* height: 5em; */
     grid-row: 4;
+    margin-left: 1.5%;
   }
   
   #hg-edibles {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/edibles_mobile.png);
+    background-size: cover;
     grid-column-start: 1;
     grid-column-end: 2 ;
     grid-row: 1;
@@ -363,13 +372,15 @@ body{
     margin-right: 1em;
   }
   #hg-dates {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/fivedates.png);
+    background-size: cover;
     grid-row: 2;
     /* width: 24em; */
   
   }
   #hg-plants {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/plants.png);
+    background-size: cover;
     grid-row: 3;
     /* width: 24em; */
   
@@ -385,7 +396,8 @@ body{
     background-image: url(photos/cry.png);
   }
   #hg-square-up {
-    background-image: url(photos/story3.png);
+    background-image: url(photos/square_mobile.png);
+    background-size: cover;
     grid-row: 5;
     /* width: 24em; */
   
@@ -432,11 +444,11 @@ body{
        1px 1px 0 #000;
   }
   p {
-    /* text-shadow:
+    text-shadow:
      -1px -1px 0 #000,  
       1px -1px 0 #000,
       -1px 1px 0 #000,
-       1px 1px 0 #000; */
+       1px 1px 0 #000;
     color: white;
     font-family: 'Abel', sans-serif;
   }
@@ -475,6 +487,11 @@ body{
   }
   }
 @media screen and (min-width: 960px){
+  .logo{
+  float:left; 
+  height: 4em; 
+  padding: .5em;
+  }
 .nav-bar {
   background-color: black;
   height: 5em;
