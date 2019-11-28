@@ -519,6 +519,12 @@ body{
 
 .featured-story {
   width: 100%;
+  transition: transform .5s;
+  overflow: hidden;
+}
+.featured-story:hover{
+  width: 100%;
+    transform: scale(1.1);
 }
 
 /* section headers -- please feel free to change */
